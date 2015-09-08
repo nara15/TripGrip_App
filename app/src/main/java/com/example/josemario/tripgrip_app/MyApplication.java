@@ -11,28 +11,25 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
 /**
- * Created by Jose Mario on 03/09/2015.
+ * Created by Mario Naranjo on 5/3/2015.
  */
-public class MyApplication extends Application{
-
+public class MyApplication extends Application {
     @Override
-    public void onCreate()
-    {
+    public void onCreate() {
         super.onCreate();
         printHashKey();
     }
 
-    //Método para imprimir el Hash Key del ambiente de desarrollo
-    public void printHashKey()
-    {
+    public void printHashKey(){
+        // Add code to print out the key hash
         try {
             PackageInfo info = getPackageManager().getPackageInfo(
-                    "com.example.josenaranjo.tripgrip_app",
+                    "com.example.josemario.tripgrip_app",
                     PackageManager.GET_SIGNATURES);
             for (Signature signature : info.signatures) {
                 MessageDigest md = MessageDigest.getInstance("SHA");
                 md.update(signature.toByteArray());
-                Log.d("android:", Base64.encodeToString(md.digest(), Base64.DEFAULT));
+                Log.d("KeyHash:", Base64.encodeToString(md.digest(), Base64.DEFAULT));
             }
         } catch (PackageManager.NameNotFoundException e) {
 
@@ -40,5 +37,4 @@ public class MyApplication extends Application{
 
         }
     }
-
 }

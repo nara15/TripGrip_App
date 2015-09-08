@@ -1,9 +1,7 @@
 <resources>
     <string name="app_name">TripGrip_App</string>
-
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="text_button">Hello</string>
-
     <string name="app_id">1171735486173791</string>
 </resources>
