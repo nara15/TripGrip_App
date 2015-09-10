@@ -37,11 +37,7 @@ public class MainFragment extends Fragment {
             AccessToken accessToken = loginResult.getAccessToken();
             Profile profile = Profile.getCurrentProfile();
 
-            //Iniciar la actividad
-            Intent intent = new Intent(this, PaginaPrincipalActivity.class);
-
-
-            //displayMessage(profile);
+            displayMessage(profile);
         }
 
         @Override
