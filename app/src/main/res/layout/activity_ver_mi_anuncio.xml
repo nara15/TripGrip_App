@@ -1,0 +1,167 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.josemario.tripgrip_app.VerMiAnuncioActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textViewTitulo"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="@string/titulo_anuncio"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="22dp" />
+
+            <RelativeLayout
+                android:id="@+id/layoutAnuncio"
+
+                android:layout_width="match_parent"
+                android:layout_height="400px"
+                android:layout_below="@id/textViewTitulo"
+
+                android:layout_alignParentStart="true" >
+
+                <ImageView
+                    android:id="@+id/imageAnuncio"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:src="@drawable/casa_icon"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textViewUbicacion"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layoutAnuncio"
+                android:layout_marginTop="10dp"
+
+                android:text="@string/ubicacion_hospedaje"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="22dp"  />
+
+            <TextView
+                android:id="@+id/textViewTextoUbicacion"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewUbicacion"
+                android:layout_marginTop="5dp"
+
+                android:text="@string/texto_Ubicacion"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="20dp"  />
+
+            <TextView
+                android:id="@+id/textViewDescripcion"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewTextoUbicacion"
+                android:layout_marginTop="10dp"
+
+                android:text="@string/descripcion_anuncio"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="22dp" />
+
+            <TextView
+                android:id="@+id/textViewTextoDescripcion"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewDescripcion"
+                android:layout_marginTop="5dp"
+
+                android:text="@string/texto_descripcion_anuncio"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/textViewCapacidad"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewTextoDescripcion"
+                android:layout_marginTop="10dp"
+
+                android:text="@string/cantidad_huespedes"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="22dp"/>
+
+            <TextView
+                android:id="@+id/textViewTextoCapacidad"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/textViewCapacidad"
+                android:layout_below="@id/textViewTextoDescripcion"
+                android:layout_alignBaseline="@id/textViewCapacidad"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+
+                android:text="5"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/textViewPrecio"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewCapacidad"
+                android:layout_marginTop="10dp"
+
+                android:text="@string/rango_precio"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="22dp"/>
+
+            <TextView
+                android:id="@+id/textViewTextoPrecio"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/textViewPrecio"
+                android:layout_below="@id/textViewCapacidad"
+                android:layout_alignBaseline="@id/textViewPrecio"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+
+                android:text="@string/texto_precio"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="20dp"/>
+
+            <Button
+                android:id="@+id/buttonActivar"
+
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+
+                android:layout_below="@id/textViewTextoPrecio"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+
+                android:text="@string/boton_desactivar" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

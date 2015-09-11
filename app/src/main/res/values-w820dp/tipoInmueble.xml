@@ -1,0 +1,7 @@
+<resources>
+    <string-array name="tipo_inmuelbe">
+        <item>Casa</item>
+        <item>Apartamento</item>
+        <item>Habitacion</item>
+    </string-array>
+</resources>

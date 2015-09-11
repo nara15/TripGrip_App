@@ -5,4 +5,70 @@
     <string name="text_button">Hello</string>
     <string name="app_id">1171735486173791</string>
     <string name="title_activity_pagina_principal">PaginaPrincipalActivity</string>
+
+
+    <string name="filtros_busqueda">Busqueda de Anuncios</string>
+    <string name="titulo_resultado_busqueda">Anuncios Filtrados</string>
+    <string name="titulo_pagina_principal">TripGrip</string>
+
+    <string name="cerrar_sesion">Salir</string>
+
+    //Busqueda de Anuncio
+    <string name="ubicacion_hospedaje">Ubicacion: </string>
+    <string name="pista_ubicacion">provincia, canton, distrito...</string>
+    <string name="cantidad_huespedes">Capacidad:</string>
+    <string name="pista_cantidad_personas">numero personas...</string>
+    <string name="rango_precio">Precio:</string>
+    <string name="rango_precio_desde">Desde:</string>
+    <string name="rango_precio_hasta">Hasta:</string>
+    <string name="pista_desde_hasta">0.00</string>
+    <string name="tipo_alojamiento">Tipo Alojamiento:</string>
+    <string name="boton_buscar">Buscar</string>
+    <string name="boton_volver">Volver</string>
+
+    //Resultados de la Busqueda
+    <string name="boton_nueva_busqueda">Nueva Busqueda</string>
+    <string name="boton_crear_anuncio">Crear Anuncio</string>
+
+    //Pagina Principal
+    <string name="bienvenida">Hola!</string>
+    <string name="boton_buscar_anuncio">Buscar Anuncios</string>
+    <string name="boton_Mesajes">Buzon de Mensajes</string>
+
+    <string name="title_activity_crear_anuncio">Crear Anuncio</string>
+
+    <string name="tipo_inmueble">Tipo de Inmueble</string>
+    <string name="tipo_habitacion">Tipo de Habitacion</string>
+    <string name="title_activity_buzon_mensajes">Buzon de Mensajes</string>
+    <string name="title_activity_conversacion">Buzon de Mensajes</string>
+
+    <string name="pista_escribir_mensaje">Escribir Mensaje</string>
+    <string name="title_activity_ver_anuncio">Anuncio</string>
+
+    <string name="titulo_anuncio">Titulo del Anuncio</string>
+    <string name="descripcion_anuncio">Descripcion:</string>
+    <string name="texto_descripcion_anuncio">Aqui va la descripcion del anuncio. La descripcion del
+                                             anuncio es muy importante pues en ella se detallan los
+                                             componentes, elementos y caracteristicas que presenta el
+                                             inmueble. Una descripcion bien elaborada llamara mas
+                                             facilmente la atencion de un posible cliente. Es asi como
+                                             sentarse a desarrollar una descripcion puede llegar a no
+                                             ser una tarea sencilla.
+                                             Cuando nos disponemos a elaborar la descripcion de un
+                                             inmueble ya sea habitacion, casa o departamente, hay que
+                                             pensar en una manera de redactar y describir la habitacion
+                                             de forma que resalte sus caracteristicas y la haga deseable
+                                             frente a otros inmuebles.</string>
+    <string name="texto_Ubicacion">Alajuela, San Ramon, San Juan</string>
+    <string name="texto_precio">20.000 por noche.</string>
+    <string name="title_activity_mis_anuncios">Mis Anuncios</string>
+    <string name="boton_contactar">Contactar</string>
+    <string name="boton_enviar">Enviar</string>
+    <string name="boton_ver_ubicacion">Ver Ubicacion</string>
+    <string name="title_activity_ver_mi_anuncio">VerMiAnuncio</string>
+    <string name="boton_activar">Activar</string>
+    <string name="boton_desactivar">Desactivar</string>
+
+
+
 </resources>

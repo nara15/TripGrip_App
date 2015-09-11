@@ -1,0 +1,7 @@
+<resources>
+    <string-array name="tipo_habitacion">
+        <item>Toda la Propiedad</item>
+        <item>Habitacion Privada</item>
+        <item>Habitacion Compartida</item>
+    </string-array>
+</resources>

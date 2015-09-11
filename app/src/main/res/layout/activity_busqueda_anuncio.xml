@@ -1,0 +1,175 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewUbicacion"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="@string/ubicacion_hospedaje"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="22dp" />
+
+    <EditText
+        android:id="@+id/editTextUbicacion"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/textViewUbicacion"
+        android:layout_marginTop="5dp"
+
+        android:hint="@string/pista_ubicacion"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textViewCantidadPersonas"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/editTextUbicacion"
+        android:layout_marginTop="10dp"
+
+        android:text="@string/cantidad_huespedes"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="22dp" />
+
+    <EditText
+        android:id="@+id/editTextCantidadPersonas"
+
+        android:layout_width="300px"
+        android:layout_height="wrap_content"
+
+        android:inputType="number"
+        android:ems="10"
+
+        android:layout_below="@+id/textViewCantidadPersonas"
+        android:layout_marginTop="5dp"
+
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/textViewRangoPrecios"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/editTextCantidadPersonas"
+        android:layout_marginTop="10dp"
+
+        android:text="@string/rango_precio"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="22dp"/>
+
+    <TextView
+        android:id="@+id/textViewDesde"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/textViewRangoPrecios"
+        android:layout_marginTop="5dp"
+
+        android:text="@string/rango_precio_desde"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/editTextDesde"
+
+        android:layout_width="300px"
+        android:layout_height="wrap_content"
+
+        android:inputType="numberDecimal"
+        android:ems="10"
+
+        android:layout_alignBaseline="@+id/textViewDesde"
+        android:layout_toRightOf="@id/textViewDesde"
+        android:layout_marginLeft="10dp"
+
+        android:hint="@string/pista_desde_hasta"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textViewHasta"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/textViewDesde"
+        android:layout_marginTop="15dp"
+
+        android:text="@string/rango_precio_hasta"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/editTextHasta"
+
+        android:layout_width="300px"
+        android:layout_height="wrap_content"
+
+        android:inputType="numberDecimal"
+        android:ems="10"
+
+        android:layout_alignBaseline="@+id/textViewHasta"
+        android:layout_toRightOf="@id/textViewHasta"
+        android:layout_marginLeft="12dp"
+
+        android:hint="@string/pista_desde_hasta"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textViewTipoAlojamiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/textViewHasta"
+        android:layout_marginTop="20dp"
+
+        android:text="@string/tipo_alojamiento"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="20dp" />
+
+    <Spinner
+        android:id="@+id/spinnerTipoHabitacion"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/textViewTipoAlojamiento"
+        android:layout_marginTop="5dp" />
+
+    <Button
+        android:id="@+id/buttonBuscar"
+
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="10dp"
+
+        android:text="@string/boton_buscar" />
+
+    <Button
+        android:id="@+id/buttonVolver"
+
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+
+        android:text="@string/boton_volver"/>
+
+</RelativeLayout>

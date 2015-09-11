@@ -43,9 +43,10 @@ public class MainFragment extends Fragment {
 
 
             Intent paginaIntent = new Intent(MainFragment.this.getActivity(), PaginaPrincipalActivity.class);
-            paginaIntent.putExtra("Hola", profile.getName());
-            displayMessage(profile);
-            MainFragment.this.startActivity(paginaIntent);
+            startActivity(paginaIntent);
+
+            //displayMessage(profile);
+
 
         }
 

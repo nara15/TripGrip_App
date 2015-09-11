@@ -1,32 +1,39 @@
 package com.example.josemario.tripgrip_app;
 
+import android.app.Activity;
 import android.content.Intent;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.TextView;
+import android.widget.Button;
 
 
-public class PaginaPrincipalActivity extends ActionBarActivity {
 
-    private TextView texto;
+public class PaginaPrincipalActivity extends Activity implements View.OnClickListener {
+    Button botonBuscarAnuncio;
+    Button botonCrearAnuncio;
+    Button botonBuzonMensajes;
+    Button botonSalir;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pagina_principal);
 
-        texto = (TextView) findViewById(R.id.l_texto);
+        botonBuscarAnuncio = (Button) findViewById(R.id.buttonBuscarAnuncio);
+        botonBuscarAnuncio.setOnClickListener(this);
 
-        Bundle b = getIntent().getExtras();
-        String txt = b.getString("Hola");
-        texto.setText(txt);
+        botonCrearAnuncio = (Button) findViewById(R.id.buttonCrearAnuncio);
+        botonCrearAnuncio.setOnClickListener(this);
+
+        botonBuzonMensajes = (Button) findViewById(R.id.buttonBuzonMensajes);
+        botonBuzonMensajes.setOnClickListener(this);
+
+        botonSalir = (Button) findViewById(R.id.buttonSalir);
+        botonSalir.setOnClickListener(this);
 
     }
-
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -43,10 +50,33 @@ public class PaginaPrincipalActivity extends ActionBarActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.cerrar_sesion) {
             return true;
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.buttonBuscarAnuncio:
+
+                Intent intentBuscarAnuncio = new Intent(PaginaPrincipalActivity.this, BusquedaAnuncioActivity.class);
+                startActivity(intentBuscarAnuncio);
+                break;
+            case R.id.buttonCrearAnuncio:
+                Intent intentCrearAnuncio = new Intent(PaginaPrincipalActivity.this, CrearAnuncioActivity.class);
+                startActivity(intentCrearAnuncio);
+                break;
+            case R.id.buttonBuzonMensajes:
+                Intent intentBuzonMensaje = new Intent(PaginaPrincipalActivity.this, BuzonMensajesActivity.class);
+                startActivity(intentBuzonMensaje);
+                break;
+            /*case R.id.buttonSalir:
+                Intent intentSalir = new Intent(PaginaPrincipalActivity.this, );
+                startActivity();
+                break; */
+        }
     }
 }
