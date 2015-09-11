@@ -28,6 +28,7 @@ public class MainFragment extends Fragment {
     private CallbackManager callbackManager;
     private TextView textView;
 
+
     private AccessTokenTracker accessTokenTracker;
     private ProfileTracker profileTracker;
 
@@ -36,6 +37,10 @@ public class MainFragment extends Fragment {
         public void onSuccess(LoginResult loginResult) {
             AccessToken accessToken = loginResult.getAccessToken();
             Profile profile = Profile.getCurrentProfile();
+
+            //Iniciar la nueva actividad
+            Intent paginaIntent = new Intent(MainFragment.this.getActivity(), PaginaPrincipalActivity.class);
+            MainFragment.this.startActivity(paginaIntent);
 
             displayMessage(profile);
         }
@@ -109,6 +114,8 @@ public class MainFragment extends Fragment {
     private void displayMessage(Profile profile){
         if(profile != null){
             textView.setText(profile.getName());
+            //textView.setText(profile.getId());
+
         }
     }
 
