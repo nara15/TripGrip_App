@@ -27,6 +27,7 @@ public class MainFragment extends Fragment {
 
     private CallbackManager callbackManager;
     private TextView textView;
+    private  LoginButton loginButton;
 
 
     private AccessTokenTracker accessTokenTracker;
@@ -39,10 +40,13 @@ public class MainFragment extends Fragment {
             Profile profile = Profile.getCurrentProfile();
 
             //Iniciar la nueva actividad
+
+
             Intent paginaIntent = new Intent(MainFragment.this.getActivity(), PaginaPrincipalActivity.class);
+            paginaIntent.putExtra("Hola", profile.getName());
+            displayMessage(profile);
             MainFragment.this.startActivity(paginaIntent);
 
-            displayMessage(profile);
         }
 
         @Override
@@ -95,7 +99,7 @@ public class MainFragment extends Fragment {
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        LoginButton loginButton = (LoginButton) view.findViewById(R.id.login_button);
+        loginButton = (LoginButton) view.findViewById(R.id.login_button);
         textView = (TextView) view.findViewById(R.id.textView);
 
         loginButton.setReadPermissions("user_friends");

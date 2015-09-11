@@ -1,18 +1,31 @@
 package com.example.josemario.tripgrip_app;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.TextView;
 
 
 public class PaginaPrincipalActivity extends ActionBarActivity {
+
+    private TextView texto;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pagina_principal);
+
+        texto = (TextView) findViewById(R.id.l_texto);
+
+        Bundle b = getIntent().getExtras();
+        String txt = b.getString("Hola");
+        texto.setText(txt);
+
     }
+
 
 
     @Override
