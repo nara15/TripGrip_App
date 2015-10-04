@@ -46,6 +46,7 @@ public class CrearAnuncioActivity extends Activity implements View.OnClickListen
         tipoInmueble = (Spinner) findViewById(R.id.spinnerTipoALojamiento);
         tipoHabitacion = (Spinner) findViewById(R.id.spinnerTipoHabitacion);
 
+        /*
         ArrayAdapter spinner_adapter_1 = ArrayAdapter.createFromResource( this, R.array.tipo_inmuelbe , android.R.layout.simple_spinner_item);
         spinner_adapter_1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         tipoInmueble.setAdapter(spinner_adapter_1);
@@ -53,7 +54,7 @@ public class CrearAnuncioActivity extends Activity implements View.OnClickListen
         ArrayAdapter spinner_adapter_2 = ArrayAdapter.createFromResource( this, R.array.tipo_habitacion , android.R.layout.simple_spinner_item);
         spinner_adapter_2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         tipoHabitacion.setAdapter(spinner_adapter_2);
-
+*/
     }
 
     @Override

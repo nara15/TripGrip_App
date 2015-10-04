@@ -101,7 +101,7 @@ public class MainFragment extends Fragment {
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         loginButton = (LoginButton) view.findViewById(R.id.login_button);
-        textView = (TextView) view.findViewById(R.id.textView);
+        //textView = (TextView) view.findViewById(R.id.textView);
 
         loginButton.setReadPermissions("user_friends");
         loginButton.setFragment(this);

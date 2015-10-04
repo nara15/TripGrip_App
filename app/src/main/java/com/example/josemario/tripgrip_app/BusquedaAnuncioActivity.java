@@ -46,13 +46,14 @@ public class BusquedaAnuncioActivity extends Activity implements View.OnClickLis
         precioDesde = (EditText) findViewById(R.id.editTextDesde);
         precioHasta = (EditText) findViewById(R.id.editTextHasta);
 
+
         tipoAlojamieto = (Spinner) findViewById(R.id.spinnerTipoHabitacion);
 
+        /*
         ArrayAdapter spinner_adapter = ArrayAdapter.createFromResource( this, R.array.tipo_habitacion , android.R.layout.simple_spinner_item);
         spinner_adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        tipoAlojamieto.setAdapter(spinner_adapter);
-        /*Spinner mySpinner=(Spinner) findViewById(R.id.your_spinner);
-        String text = mySpinner.getSelectedItem().toString();*/
+        tipoAlojamieto.setAdapter(spinner_adapter); */
+
     }
 
     @Override

@@ -6,7 +6,14 @@
     android:paddingEnd="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="@drawable/pagina_principal_fond"
     tools:context="com.example.josemario.tripgrip_app.PaginaPrincipalActivity">
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+    
 
     <TextView
         android:id="@+id/textViewBienvenida"
@@ -24,62 +31,69 @@
     <Button
         android:id="@+id/buttonBuscarAnuncio"
 
-        android:layout_width="150dp"
-        android:layout_height="50dp"
+        android:layout_width="140dp"
+        android:layout_height="70dp"
 
+        android:text="@string/boton_buscar_anuncio"
+        android:background="@drawable/bnt_pagina_principal"
 
-        android:layout_marginBottom="112dp"
         android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/textViewBienvenida"
-        android:layout_marginLeft="10dp"
-
-        android:text="@string/boton_buscar_anuncio"/>
+        android:layout_toLeftOf="@+id/buttonBuzonMensajes"
+        android:layout_toStartOf="@+id/buttonBuzonMensajes"
+        android:layout_marginBottom="140dp" />
 
     <Button
         android:id="@+id/buttonCrearAnuncio"
 
-        android:layout_width="150dp"
+        android:layout_width="140dp"
         android:layout_height="50dp"
 
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="44dp"
-        android:layout_marginLeft="10dp"
+        android:text="@string/boton_crear_anuncio"
+        android:background="@drawable/bnt_pagina_principal"
 
-        android:text="@string/boton_crear_anuncio"/>
-
-    <Button
-        android:id="@+id/buttonBuzonMensajes"
-
-        android:layout_width="150dp"
-        android:layout_height="50dp"
-
-        android:layout_alignTop="@+id/buttonBuscarAnuncio"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="10dp"
-
-        android:text="@string/boton_Mesajes" />
+        android:layout_below="@+id/buttonBuzonMensajes"
+        android:layout_alignLeft="@+id/buttonBuscarAnuncio"
+        android:layout_alignStart="@+id/buttonBuscarAnuncio" />
 
     <Button
         android:id="@+id/buttonSalir"
 
-        android:layout_width="150dp"
+        android:layout_margin="5dp"
+        android:layout_width="140dp"
         android:layout_height="50dp"
 
+        android:text="@string/cerrar_sesion"
+
         android:layout_alignTop="@+id/buttonCrearAnuncio"
-        android:layout_alignEnd="@+id/buttonBuzonMensajes"
-
-        android:text="@string/cerrar_sesion" />
-
-    <ImageView
-        android:id="@+id/imageViewPaginaPrincipal"
-        android:src="@drawable/tripgrip_icon"
-
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/imageViewPaginaPrincipal"
+        android:layout_alignEnd="@+id/imageViewPaginaPrincipal" />
 
 
-        android:layout_above="@+id/buttonBuscarAnuncio"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="65dp" />
+        <Button
+            android:id="@+id/buttonBuzonMensajes"
+
+            android:layout_margin="5dp"
+            android:layout_width="140dp"
+            android:layout_height="70dp"
+
+            android:text="@string/boton_Mesajes"
+            android:background="@drawable/bnt_pagina_principal"
+
+            android:layout_alignTop="@+id/buttonBuscarAnuncio"
+            android:layout_alignLeft="@+id/buttonSalir"
+            android:layout_alignStart="@+id/buttonSalir" />
+
+        <ImageView
+            android:id="@+id/imageViewPaginaPrincipal"
+            android:src="@drawable/tripgrip_icon"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_above="@+id/buttonBuscarAnuncio"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp" />
+
+    </RelativeLayout>
 
 </RelativeLayout>
