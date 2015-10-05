@@ -162,6 +162,4 @@
         android:layout_below="@id/textViewPrecio"
         android:hint="@string/pista_desde_hasta"/>
 
-
-
 </RelativeLayout>

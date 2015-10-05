@@ -68,6 +68,7 @@
     <string name="title_activity_ver_mi_anuncio">VerMiAnuncio</string>
     <string name="boton_activar">Activar</string>
     <string name="boton_desactivar">Desactivar</string>
+    <string name="title_activity_registrar_anuncio">RegistrarAnuncioActivity</string>
 
 
 

@@ -20,16 +20,17 @@ import com.facebook.login.LoginResult;
 import com.facebook.login.widget.LoginButton;
 
 
+
+
 /**
  * A placeholder fragment containing a simple view.
  */
 public class MainFragment extends Fragment {
 
-    private CallbackManager callbackManager;
     private TextView textView;
+
+    private CallbackManager callbackManager;
     private  LoginButton loginButton;
-
-
     private AccessTokenTracker accessTokenTracker;
     private ProfileTracker profileTracker;
 
@@ -41,9 +42,8 @@ public class MainFragment extends Fragment {
 
             //Iniciar la nueva actividad
 
-
-            Intent paginaIntent = new Intent(MainFragment.this.getActivity(), PaginaPrincipalActivity.class);
-            startActivity(paginaIntent);
+            Intent paginaPrincipal = new Intent(MainFragment.this.getActivity(), PaginaPrincipalActivity.class);
+            startActivity(paginaPrincipal);
 
             //displayMessage(profile);
 
